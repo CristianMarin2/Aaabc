@@ -6,7 +6,7 @@ export interface ScannedProduct {
   quantity: number;
 }
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'http:licentacristibackend-csbccrgnd7cugcaa.northeurope-01.azurewebsites.net';
 
 export async function fetchProduct(barcode: string): Promise<ScannedProduct | null> {
   const trimmed = barcode.trim();
